@@ -1,0 +1,382 @@
+@import url("common_style.css");
+
+/* carousel-css */
+.carousel-block {
+  position: relative;
+  /* top: 4rem; */
+}
+.carousel-caption {
+  bottom: 10rem;
+}
+
+/***** Global Slide *****/
+.slide-right, .slide-left {
+  width: 100%;
+}
+/***** Slide Right *****/
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/****** Banner-CSS ********/
+.banner-txt.carousel-caption {
+  color: #f95a2b;
+  bottom: 10rem;
+  
+}
+.banner-txt .h1 {
+  font-size: 5.5rem;
+}
+.carousel-caption {
+  color: #f95a2b !important; 
+}
+.second-banner-txt.carousel-caption { 
+  right: 0%;
+  bottom: 10rem;
+  left: 69%;
+}
+.third-banner-txt.carousel-caption { 
+  right: 40%;
+  bottom: 10rem;
+  left: 0%;
+}
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.delay-banner2 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/*=== FADE IN DOWN ===*/
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -600%, 0);
+    transform: translate3d(0, -600%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/*==== FADE IN UP ===*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 500%, 0);
+    transform: translate3d(0, 500%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .featured-block .slide-up:hover::before {
+  height: 100%;
+  transition: all ease-in-out .5s;
+}
+.featured-block .slide-up::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transition: all ease-in-out .5s;
+  background: #029e9d!important;
+  cursor: pointer;
+  opacity: 0.5;
+} */
+
+
+
+.section-slideup {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease 0.25s;
+}
+.section-slideup.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.getintch-bg-image {
+  background-image: url(".././img/get_in_touch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 426px;
+}
+
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+.center-div .display-4 {
+  line-height: 1.5;
+}
+
+
+.button-container {
+  position: relative;
+  bottom: 2rem;
+  right: 0.4rem;
+  text-align: end;
+}
+.plus-btn, .minus-btn {
+  line-height: 14px !important;
+}
+
+
+/* .topNav:hover>.navbar-header>button { */
+/* .listing-card-content:not(.book-btn):hover {
+  cursor: pointer;
+  background-color: #d5e7f1;
+} */
+
+.listing-card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+
+.more-content {
+  display: none;
+}
+
+.rounded-pill {
+  padding: 1rem 1rem;
+}
+.subscribe-btn-cntnr .rounded-pill {
+  padding: 0.5rem 1.5rem;
+}
+.subscribe-btn-cntnr {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+}
+
+
+
+
+/* .form-control.is-invalid,
+.was-validated .form-control:invalid,
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background-image: none;
+}
+.was-validated :invalid ~ .invalid-feedback,
+.was-validated :valid ~ .valid-feedback {
+  position: absolute;
+  text-align: left;
+} */
+
+
+.valid-tooltip {
+  font-family: monospace;
+  background-color: #00cc76;
+  opacity: 0.95;
+}
+
+.invalid-tooltip {
+  font-family: monospace;
+  background-color: #ff0044;
+  opacity: 0.95;
+}
+
+
+
+
+
+.tour-rating {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.tour-rating ul {
+  text-align: left;
+}
+.tour-rating ul li {
+  display: inline-block;
+  font-size: 15px;
+  margin: 0;
+  line-height: 25px;
+  color: #ffa11a;
+}
+.tour-bookbtn {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+  z-index: 10;
+}
+p.h4.listing-card {
+  color: var(--primary-color);
+}
+.chooseus-block {
+  background-color: #34482c;
+  color: #ffffff;
+}
+.chooseus-img {
+  width: 82px;
+}
+.blogger-block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.blogger-block ul li {
+  display: inline-block;
+  font-size: 15px;
+  margin: 0;
+  line-height: 25px;
+}
+.find-car-section {
+  /* margin-top: -3.5rem; */
+  margin-bottom: 2rem;
+}
+/* .amazingplace-block {
+  position: relative;
+  top: 1.5rem;
+} */
+.find-car-section .booknow-btn {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+.fs-1 .italic-txt {
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 2rem;
+}
+.display-4 .italic-txt {
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+
+
+.form-control.qty.is-invalid, .was-validated .form-control.qty:invalid {
+  background-position: right calc(4em + .1875rem) center;
+}
+.needs-validation-findCars.was-validated {
+  padding-bottom: 4rem !important;
+}
+.was-validated .invalid-tooltip, .was-validated .valid-tooltip {
+  top: 6.4rem;
+}
+.was-validated .chkin-date .invalid-tooltip, .was-validated .chkin-date .valid-tooltip {
+  top: 3.4rem;
+}
+.chkin-date .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: .375rem;
+  border-bottom-right-radius: .375rem;
+}
+
+
+
+
+
+
+
+
+/*--------------------------*/
+
+
+
+
+
+/* .column img {
+	display: block;
+	width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
